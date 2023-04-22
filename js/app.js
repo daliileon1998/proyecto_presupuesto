@@ -1,11 +1,11 @@
 const ingresos = [
-    new Ingreso('Salario',2100.00),
-    new Ingreso('venta coche', 5000.00)
+    new Ingreso('Salario',2100000),
+    new Ingreso('venta coche', 5000000)
 ];
 
 const egresos = [
-    new Egreso('Renta departamento',900.00),
-    new Egreso('Ropa', 400.00)
+    new Egreso('Renta departamento',900000),
+    new Egreso('Ropa', 400000)
 ];
 
 
@@ -42,7 +42,7 @@ let cargarCabercero = () =>{
 }
 
 const formatoMoneda = (valor) =>{
-    return valor.toLocaleString('es-CO',{style:'currency', currency:'COP', minimumFractionDigits:3});
+    return valor.toLocaleString('es-CO',{style:'currency', currency:'COP', minimumFractionDigits:0});
 }
 
 const formatoPorcentaje = (valor) =>{
